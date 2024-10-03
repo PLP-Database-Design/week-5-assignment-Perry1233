@@ -1,0 +1,77 @@
+ <!-- QUESTION 1: Retrieve all patients -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Patient ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% results.forEach(row => { %>
+            <tr>
+                <td><%= row.patient_id %></td>
+                <td><%= row.first_name %></td>
+                <td><%= row.last_name %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+  </table>
+
+
+ 
+   <!-- QUESTION 2: Retrieve all providers -->
+ 
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% results.forEach(row => { %>
+            <tr>
+                <td><%= row.first_name %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+  </table> 
+
+
+
+    <!-- QUESTION 3: Filter patients by First Name -->
+
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% results.forEach(row => { %>
+            <tr>
+                <td><%= row.first_name %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+  </table>
+
+
+  <!-- QUESTION 4: Retrieve all providers by their specialty -->
+
+  <table>
+    <thead>
+        <tr>
+           
+            <th>Provider Specialty</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% results.forEach(row => { %>
+            <tr>
+                <td><%= row.provider_specialty %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+  </table>
